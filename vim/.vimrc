@@ -6,7 +6,8 @@ function! InsertJinxTagHeader()
 	endif
 
 	let l:login = $USER
-	let l:user = l:login . " <" . l:login . "@local>"
+	let l:host = hostname()
+	let l:user = l:login . " <" . l:login . "@" . l:host . ">"
 	let l:date = strftime("%Y/%m/%d %H:%M:%S")
 
 	" Calibrated to exactly 80 characters per line
