@@ -8,6 +8,7 @@ Personal configuration files for Arch Linux, managed with GNU Stow.
 * **alacritty**: Terminal emulator configuration (TOML)
 * **starship**: Cross-shell prompt theme
 * **fastfetch**: System information display
+* **vim**: Personalized meta header
 
 ## Deployment
 
