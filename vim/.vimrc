@@ -13,8 +13,7 @@ function! InsertJinxTagHeader()
 	" Calibrated to exactly 80 characters per line
 	let l:f_line = printf("/*   %-45s   | ||_ _|| \\ | |\\ \\/ /    */", l:filename)
 	let l:u_line = printf("/*   By: %-41s|____||___||_|\\__|/_/\\_\\    */", l:user)
-	let l:c_date = printf("/*   Created: %s by %-17s* ~ PowPow!! ~ *        */", l:date, l:login)
-	let l:u_date = printf("/*   Updated: %s by %-17s   \\   !!   /           */", l:date, l:login)
+	let l:c_date = printf("/*   Created: %s by %-19s* ~ PowPow!! ~ *      */", l:date, l:login)
 
 	let l:header = [
 	    \ "/* ************************************************************************** */",
@@ -25,7 +24,6 @@ function! InsertJinxTagHeader()
 	    \ l:u_line,
 	    \ "/*					         ~~~~~~~~~~~~~~~~~~~~~~~~~    */",
 	    \ l:c_date,
-	    \ l:u_date,
 	    \ "/*									      */",
 	    \ "/* ************************************************************************** */",
 	    \ ""
